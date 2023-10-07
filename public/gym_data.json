@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Strength Training",
+    "description": "Strength Training is a fitness regimen focused on building muscle mass and enhancing physical strength. This form of exercise typically involves lifting weights or resistance training exercises to target specific muscle groups. Strength Training not only helps individuals achieve a more toned and sculpted physique but also contributes to improved overall health and increased metabolism. It is a fundamental component of any comprehensive fitness program, offering a wide range of benefits, from increased muscle endurance to enhanced bone density. Whether you're a novice or an experienced athlete, Strength Training can be tailored to suit your fitness goals and is an essential part of achieving a healthier and stronger body.",
+    "image": "https://e1.pxfuel.com/desktop-wallpaper/305/542/desktop-wallpaper-pose-tattoo-muscle-muscle-tattoo-press-dumbbells-gym-gym-bodybuilder-abs-dumbbells-bodybuilder-section-%D1%81%D0%BF%D0%BE%D1%80%D1%82-bodybuilders.jpg",
+    "price": 49.99,
+    "rating": 4.5,
+    "trainer": "John Doe",
+    "trainer_img": "https://www.instituteofpersonaltrainers.com/uploads/2/2/0/1/22014694/published/shaun-stafford-personal-trainer.jpg?1612613198"
+  },
+  {
+    "id": 2,
+    "title": "Cardio Workout",
+    "description": "Cardio Workout, short for cardiovascular workout, is a dynamic and heart-pumping exercise routine designed to elevate your heart rate and boost endurance. This form of fitness involves activities such as running, cycling, swimming, or aerobic exercises that engage large muscle groups and increase oxygen intake. Cardio Workouts are excellent for improving cardiovascular health, burning calories, and enhancing stamina. They are a popular choice for those aiming to shed excess weight, enhance lung capacity, and maintain a healthy heart. Whether you prefer a brisk jog outdoors or a high-energy indoor class, Cardio Workouts provide a fun and effective way to elevate your fitness level and maintain overall well-being.",
+    "image": "https://wallpapercave.com/wp/wp7535570.jpg",
+    "price": 39.99,
+    "rating": 4.2,
+    "trainer": "Jane Smith",
+    "trainer_img": "https://www.instituteofpersonaltrainers.com/uploads/2/2/0/1/22014694/published/shaun-stafford-personal-trainer.jpg?1612613198"
+  },
+  {
+    "id": 3,
+    "title": "Yoga Classes",
+    "description": "Yoga Classes offer a holistic and balanced approach to physical and mental well-being. Rooted in ancient traditions, yoga involves a series of poses, breathing exercises, and meditation techniques that promote flexibility, strength, and inner peace. These classes are a sanctuary for relaxation, stress reduction, and mindfulness. Whether you're a beginner seeking gentle stretching or an experienced yogi looking to deepen your practice, Yoga Classes cater to individuals of all levels. They provide a serene and supportive environment to enhance physical flexibility, mental clarity, and emotional harmony. Embark on a journey of self-discovery and inner calm with Yoga Classes, and experience the numerous benefits of this time-tested practice.",
+    "image": "https://www.ayurvedatourindia.com/wp-content/uploads/2020/09/onlineyogaclassesinpatna.jpg",
+    "price": 29.99,
+    "rating": 4.8,
+    "trainer": "Emily Johnson",
+    "trainer_img": "https://www.instituteofpersonaltrainers.com/uploads/2/2/0/1/22014694/published/shaun-stafford-personal-trainer.jpg?1612613198"
+  },
+  {
+    "id": 4,
+    "title": "Zumba Fiesta",
+    "description": "Zumba Fiesta is a dynamic and joyous fitness event that invites you to dance your way to better health. Led by passionate Zumba instructors, it's a high-energy, Latin-inspired dance party designed to make exercise feel like a celebration. Whether you're a seasoned dancer or a beginner, the catchy beats and easy-to-follow moves ensure that everyone can join in the fun. Get ready to sweat, smile, and groove as you burn calories, improve your coordination, and uplift your spirits. Zumba Fiesta is not just a workout; it's an exhilarating experience where fitness and fun collide on the dance floor. Join us and let the rhythm of Zumba take you on a fitness journey like no other!",
+    "image": "https://images.unsplash.com/photo-1527933053326-89d1746b76b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8enVtYmElMjBmaXRuZXNzfGVufDB8fDB8fHww&w=1000&q=80",
+    "price": 44.99,
+    "rating": 4.7,
+    "trainer": "Michael Brown",
+    "trainer_img": "https://www.instituteofpersonaltrainers.com/uploads/2/2/0/1/22014694/published/shaun-stafford-personal-trainer.jpg?1612613198"
+  },
+  {
+    "id": 5,
+    "title": "Pilates Classes",
+    "description": "Pilates Classes offer a transformative and balanced approach to fitness, focusing on strengthening the core, improving flexibility, and enhancing overall body awareness. Rooted in precise movements and controlled breathing, Pilates is renowned for promoting a strong, lean physique while fostering mind-body harmony. In these classes, experienced instructors guide participants through a series of exercises that emphasize core stability and muscular balance. Whether you're a beginner seeking to improve posture or an advanced practitioner aiming to refine your technique, Pilates Classes provide a welcoming and inclusive environment for all. Discover the benefits of increased strength, improved posture, and enhanced flexibility while finding inner serenity through the art of controlled movement. Join us for Pilates Classes and embark on a journey to a healthier, more balanced you.",
+    "image": "https://assets.hvmag.com/2023/05/yJvWjcd5-Pilates-Studios-Hudson-Valley.jpg",
+    "price": 34.99,
+    "rating": 4.6,
+    "trainer": "Sarah Wilson",
+    "trainer_img": "https://www.instituteofpersonaltrainers.com/uploads/2/2/0/1/22014694/published/shaun-stafford-personal-trainer.jpg?1612613198"
+  },
+  {
+    "id": 6,
+    "title": "Boxing Training",
+    "description": "Boxing Training is an invigorating fitness experience that combines the art of boxing with an intensive workout regimen. Led by skilled trainers, these sessions offer a unique blend of cardiovascular conditioning, strength-building, and boxing techniques. Whether you're looking to improve your self-defense skills, boost your endurance, or simply release stress in a controlled environment, Boxing Training has you covered. Learn to throw punches, work the speed bag, and build both physical and mental resilience. It's an empowering and empowering fitness journey that will leave you feeling strong, confident, and ready to face any challenge life throws your way. Join us in the ring for Boxing Training and unleash your inner fighter while achieving your fitness goals.",
+    "image": "https://wallpapers.com/images/hd/boxing-ring-training-qgj6chcbf3jn7rhv.jpg",
+    "price": 54.99,
+    "rating": 4.4,
+    "trainer": "David Lee",
+    "trainer_img": "https://www.instituteofpersonaltrainers.com/uploads/2/2/0/1/22014694/published/shaun-stafford-personal-trainer.jpg?1612613198"
+  },
+  {
+    "id": 7,
+    "title": "Spin Classes",
+    "description": "Spin Classes are the ultimate high-energy, indoor cycling experience designed to turbocharge your fitness journey. Led by motivating instructors, these classes take you on a thrilling ride that combines heart-pounding music, immersive visual simulations, and intense cycling drills. Whether you're a seasoned cyclist or a beginner, Spin Classes cater to all levels, allowing you to control your own resistance and pace. Pedal to the rhythm, challenge your endurance, and torch calories in a supportive group environment. The camaraderie, the sweat, and the exhilaration of Spin Classes make them a fantastic way to boost cardiovascular health, build leg strength, and leave you feeling recharged and ready to conquer the day. Join us in the saddle for Spin Classes and discover the excitement of cycling like never before!",
+    "image": "https://media.gq-magazine.co.uk/photos/5d13a7bd533a233165c63586/16:9/w_2560%2Cc_limit/01-gq-20dec18_b.jpg",
+    "price": 49.99,
+    "rating": 4.3,
+    "trainer": "Lisa Adams",
+    "trainer_img": "https://www.instituteofpersonaltrainers.com/uploads/2/2/0/1/22014694/published/shaun-stafford-personal-trainer.jpg?1612613198"
+  },
+  {
+    "id": 8,
+    "title": "Meditation Sessions",
+    "description": "Meditation Sessions offer a serene sanctuary for the mind and soul. Led by experienced guides, these sessions provide a tranquil escape from the chaos of daily life. Explore the art of mindfulness and meditation, allowing you to find inner peace, reduce stress, and enhance mental clarity. Whether you're new to meditation or a seasoned practitioner, our sessions are inclusive and welcoming to all. In a calming atmosphere, you'll learn techniques to quiet the mind, deepen your self-awareness, and foster a sense of tranquility. Join us for Meditation Sessions and embark on a journey of self-discovery and mental rejuvenation, leaving you feeling refreshed and balanced, ready to face life's challenges with clarity and calmness.",
+    "image": "https://c0.wallpaperflare.com/preview/685/967/619/healthy-lifestyle-meditating-nature.jpg",
+    "price": 19.99,
+    "rating": 4.9,
+    "trainer": "Matthew Taylor",
+    "trainer_img": "https://www.instituteofpersonaltrainers.com/uploads/2/2/0/1/22014694/published/shaun-stafford-personal-trainer.jpg?1612613198"
+  },
+  {
+    "id": 9,
+    "title": "CrossFit Workouts",
+    "description": "CrossFit Workouts are intense and comprehensive fitness routines that challenge every aspect of your physical fitness. Rooted in functional movements and constantly varied exercises, CrossFit is known for building strength, endurance, agility, and overall athleticism. Led by certified coaches, these workouts are tailored to push your limits and achieve peak performance. Whether you're lifting weights, doing high-intensity interval training, or performing bodyweight exercises, CrossFit Workouts offer a dynamic and supportive community environment where participants encourage and motivate each other to excel. Join us for CrossFit Workouts and unlock your full fitness potential while forging a strong sense of camaraderie and accomplishment.",
+    "image": "https://wallpapers.com/images/hd/crossfit-tire-gym-workout-surhzk8bpxr5ju1g.jpg",
+    "price": 59.99,
+    "rating": 4.1,
+    "trainer": "Laura Martinez",
+    "trainer_img": "https://www.instituteofpersonaltrainers.com/uploads/2/2/0/1/22014694/published/shaun-stafford-personal-trainer.jpg?1612613198"
+  },
+  {
+    "id": 10,
+    "title": "Zumba Classes",
+    "description": "Zumba Classes are a lively and exhilarating dance fitness experience that infuses Latin rhythms and infectious beats into a workout routine. Led by enthusiastic instructors, these classes are a celebration of movement and music, where you can shimmy, salsa, and shake your way to fitness. Suitable for all levels of fitness, Zumba Classes offer a welcoming and inclusive atmosphere where you can let loose and have fun while burning calories and improving cardiovascular health. Whether you're a seasoned dancer or just looking for a fun way to get in shape, Zumba Classes provide a fantastic opportunity to boost your energy, improve coordination, and ignite your passion for dance and fitness. Join us on the dance floor for Zumba Classes and unleash your inner dancer while working toward a healthier you!",
+    "image": "https://cdn.citymapia.com/kottayam/neelambari-academy-of-music-health/19989/Portfolio.jpg?biz=4193",
+    "price": 34.99,
+    "rating": 4.7,
+    "trainer": "Carlos Rodriguez",
+    "trainer_img": "https://www.instituteofpersonaltrainers.com/uploads/2/2/0/1/22014694/published/shaun-stafford-personal-trainer.jpg?1612613198"
+  },
+  {
+    "id": 11,
+    "title": "Bootcamp Training",
+    "description": "Bootcamp Training is a high-intensity and results-driven fitness program designed to push your limits and achieve peak performance. Led by dedicated instructors, these sessions draw inspiration from military-style training, incorporating a mix of strength exercises, cardio drills, and agility challenges. Bootcamp Training is perfect for those seeking a total-body workout that builds strength, burns calories, and enhances endurance. Whether you're a fitness enthusiast or new to intense workouts, Bootcamp Training offers a motivating and supportive environment where you can push yourself to new heights. Join us for Bootcamp Training and embark on a fitness journey that will sculpt your body, boost your confidence, and leave you feeling empowered and accomplished.",
+    "image": "https://media.istockphoto.com/id/483482515/photo/outdoor-fitness.jpg?s=612x612&w=0&k=20&c=bsjlN9dy4ozQ28ukNJfD7IslETpymQaa5PmQ96zfHBc=",
+    "price": 44.99,
+    "rating": 4.3,
+    "trainer": "Michelle White",
+    "trainer_img": "https://www.instituteofpersonaltrainers.com/uploads/2/2/0/1/22014694/published/shaun-stafford-personal-trainer.jpg?1612613198"
+  },
+  {
+    "id": 12,
+    "title": "Swimming Lessons",
+    "description": "Swimming Lessons offer a safe and supportive environment for individuals of all ages and skill levels to learn and improve their swimming abilities. Led by certified swim instructors, these sessions provide comprehensive instruction on swimming techniques, water safety, and confidence-building in the water. Whether you're a beginner taking your first strokes or an intermediate swimmer looking to refine your skills, Swimming Lessons cater to your specific needs. In these classes, you'll gain the essential skills and knowledge required to enjoy the water safely while increasing your aquatic confidence. Dive into the world of swimming with us, and discover the joy of gliding through the water with skill and ease while ensuring your safety in various aquatic environments.",
+    "image": "https://thebathandwiltshireparent.co.uk/wp-content/uploads/2019/05/Puddle-Ducks-opener-759x500.jpg",
+    "price": 29.99,
+    "rating": 4.8,
+    "trainer": "James Smith",
+    "trainer_img": "https://www.instituteofpersonaltrainers.com/uploads/2/2/0/1/22014694/published/shaun-stafford-personal-trainer.jpg?1612613198"
+  }
+]
