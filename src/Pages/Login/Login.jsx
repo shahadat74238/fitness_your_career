@@ -1,13 +1,16 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { BsEyeSlash, BsGithub } from "react-icons/bs";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { BsEye } from 'react-icons/bs';
+import { BsEye } from "react-icons/bs";
 import toast from "react-hot-toast";
 
 const Login = () => {
-  const { user, googleLogin, githubLogin, loginWithEmailAndPassword } = useContext(AuthContext);
+  const { googleLogin, githubLogin, loginWithEmailAndPassword } =
+    useContext(AuthContext);
+  const navigate = useNavigate();
+  const [error, serError] = useState("");
   const [type, setType] = useState(false);
 
   const handleLogin = (event) => {
@@ -15,26 +18,25 @@ const Login = () => {
     const form = new FormData(event.currentTarget);
     const email = form.get("email");
     const password = form.get("password");
-    console.log(email, password);
 
     loginWithEmailAndPassword(email, password)
-    .then(()=>{
-      user ?
-      toast.success('Already Login!')
-      :
-      toast.success('Successfully Login!')
-    })
-    .catch(err => {
-      console.log(err.message);
-    })
-
+      .then(() => {
+        toast.success("Successfully Login!");
+        // Navigate
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch(() => {
+        serError("Invalid email or password, Please try again!");
+      });
   };
 
   // Google login.
   const handleGoogleLogin = () => {
     googleLogin()
       .then(() => {
-        toast.success('Successfully Login!');
+        toast.success("Successfully Login!");
+        // Navigate
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         console.log(error.massage);
@@ -45,7 +47,9 @@ const Login = () => {
   const handleGithubLogin = () => {
     githubLogin()
       .then(() => {
-        toast.success('Successfully Login!');
+        toast.success("Successfully Login!");
+        // Navigate
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         console.log(error.massage);
@@ -71,18 +75,24 @@ const Login = () => {
               </div>
               <div className="relative">
                 <input
-                  type={type? "text" : "password"}
+                  type={type ? "text" : "password"}
                   name="password"
                   id="password"
                   required
                   placeholder="Password"
-                  className={`${type? "text-base py-3" : ""} mt-4 outline-none placeholder:font-normal placeholder:text-base text-2xl font-bold border-b-2  border-[#C5C5C5] py-2 placeholder:text-[#C5C5C5] bg-transparent w-full`}
+                  className={`${
+                    type ? "text-base py-3" : ""
+                  } mt-4 outline-none placeholder:font-normal placeholder:text-base text-2xl font-bold border-b-2  border-[#C5C5C5] py-2 placeholder:text-[#C5C5C5] bg-transparent w-full`}
                 />
-                <span onClick={()=>setType(!type)} className="absolute bottom-4 right-0">
-                  {
-                    type? <BsEye></BsEye>: <BsEyeSlash></BsEyeSlash>
-                  }
-                  </span>
+                <span
+                  onClick={() => setType(!type)}
+                  className="absolute bottom-4 right-0"
+                >
+                  {type ? <BsEye></BsEye> : <BsEyeSlash></BsEyeSlash>}
+                </span>
+              </div>
+              <div className="mt-3">
+                <p className="text-red-700 font-semibold">{error}</p>
               </div>
               <div className="flex justify-between items-center mt-6">
                 <div className="flex items-center">

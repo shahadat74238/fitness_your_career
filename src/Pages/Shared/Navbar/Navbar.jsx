@@ -3,15 +3,14 @@ import { useContext } from "react";
 import toast from "react-hot-toast";
 import { Link, NavLink } from "react-router-dom";
 
-
-
 const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
+  console.log(user);
 
   const handleLogout = () => {
     logout()
       .then(() => {
-        toast.success('Successfully created!');
+        toast.success("Successfully created!");
       })
       .catch((error) => {
         console.log(error.message);
@@ -25,7 +24,7 @@ const Navbar = () => {
           to="/"
           className={({ isActive }) =>
             isActive
-              ? "text-[#7cb908] underline"
+              ? "text-[#7cb908] underline font-semibold"
               : "hover:text-[#7cb908] hover:underline"
           }
         >
@@ -34,22 +33,10 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to="/services"
+          to="/events"
           className={({ isActive }) =>
             isActive
-              ? "text-[#7cb908] underline"
-              : "hover:text-[#7cb908] hover:underline"
-          }
-        >
-          Services
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="/event"
-          className={({ isActive }) =>
-            isActive
-              ? "text-[#7cb908] underline"
+              ? "text-[#7cb908] underline font-semibold"
               : "hover:text-[#7cb908] hover:underline"
           }
         >
@@ -58,10 +45,22 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
+          to="/blog"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#7cb908] underline font-semibold"
+              : "hover:text-[#7cb908] hover:underline"
+          }
+        >
+          Blog
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
           to="/aboutUs"
           className={({ isActive }) =>
             isActive
-              ? "text-[#7cb908] underline"
+              ? "text-[#7cb908] underline font-semibold"
               : "hover:text-[#7cb908] hover:underline"
           }
         >
@@ -99,7 +98,7 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <h1 className="md:text-4xl text-2xl font-bold">
+          <h1 className="md:text-5xl text-2xl font-bold">
             <span className="text-[#7cb908]">FIT</span>NESS
           </h1>
         </div>
@@ -108,22 +107,38 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           {user ? (
-            <button
-              onClick={handleLogout}
-              className="md:py-2 md:px-4 py-1 px-3 rounded-lg bg-[#7cb908] font-semibold text-lg"
-            >
-              Logout
-            </button>
+            <div className="dropdown dropdown-bottom dropdown-end">
+              <label tabIndex={0} className="">
+                <div className="avatar online cursor-pointer">
+                  <div className="w-10 rounded-full">
+                    <img src={user.photoURL? user.photoURL : "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"} />
+                  </div>
+                </div>
+              </label>
+              <ul
+                tabIndex={0}
+                className="dropdown-content z-[1] mt-3  p-3 shadow  rounded-box bg-[#0a0d1d] w-36 md:w-52"
+              >
+                <p className="text-sm text-center md:text-lg md:font-semibold">{user.displayName ? user.displayName : "Username"}</p>
+                <li>
+                  <button
+                    onClick={handleLogout}
+                    className=" w-full hover:text-[#7cb908] lg:text-lg lg:font-semibold "
+                  >
+                    Logout
+                  </button>
+                </li>
+              </ul>
+            </div>
           ) : (
             <Link to="/login">
-              <button className="md:py-2 md:px-4 py-1 px-3 rounded-lg bg-[#7cb908] font-semibold text-lg">
+              <button className="md:py-2 md:px-4 py-1 px-3 rounded-lg bg-[#7cb908] font-semibold text-lg hover:bg-[#0a0d1d] hover:text-[#7cb908] hover:border-2 hover:border-[#7cb908]">
                 Login
               </button>
             </Link>
           )}
         </div>
       </div>
-      
     </div>
   );
 };

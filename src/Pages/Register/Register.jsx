@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { BsEyeSlash, BsGithub } from "react-icons/bs";
 import { useContext, useState } from "react";
@@ -10,18 +10,35 @@ import toast from "react-hot-toast";
 const Register = () => {
     const { googleLogin, githubLogin, createUser } = useContext(AuthContext);
     const [type, setType] = useState(false);
+    const navigate = useNavigate();
+    const [error, setError] = useState("");
 
-  const handleLogin = (event) => {
+  const handleRegister = (event) => {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
-    const name = form.get('name');
+    const name = form.get("name");
     const email = form.get('email');
     const password = form.get('password');
-    console.log(name, email, password);
+    const accepted = form.get('check');
 
-    createUser(email, password)
+    if(password.length < 6 ){
+      setError("Password should be at least 6 characters longer!");
+      return;
+    }
+    else if (!/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!])(?!.*\s).{6,16}$/.test(password)) {
+      setError("Password should be at least one uppercase letter, one lowercase letter and one number!!!");
+      return;
+    }
+    else if(accepted === null){
+      setError("Please accept our trams and conditions!");
+      return;
+    }
+
+    createUser(email, password, name)
     .then(() => {
       toast.success('Successfully Account Created!');
+      // Navigate
+      navigate(location?.state ? location.state : "/");
     })
     .catch(error => {
         console.log(error.message);
@@ -33,6 +50,8 @@ const Register = () => {
     googleLogin()
       .then(() => {
         toast.success('Successfully Login!');
+        // Navigate
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         console.log(error.massage);
@@ -44,6 +63,8 @@ const Register = () => {
     githubLogin()
       .then(() => {
         toast.success('Successfully Login!');
+        // Navigate
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         console.log(error.massage);
@@ -56,7 +77,7 @@ const Register = () => {
         <div className="md:w-3/4 mx-auto px-5 md:px-10 lg:px-0  md:pb-8 rounded-lg">
           <div className="md:px-14 px-8 py-6 rounded-md border border-[#7cb908]">
             <h1 className="font-bold text-2xl text-[#7cb908]">Create an Account</h1>
-            <form onSubmit={handleLogin}>
+            <form onSubmit={handleRegister}>
               <div>
                 <input
                   type="text"
@@ -101,13 +122,15 @@ const Register = () => {
                   }
                   </span>
               </div>
+              <div className="mt-5">
+                <p className="font-semibold text-red-700">{error}</p>
+              </div>
               <div className="flex justify-between items-center mt-6">
                 <div className="flex items-center">
                   <input
                     type="checkbox"
                     name="check"
                     id="check"
-                    required
                     className="cursor-pointer h-5 w-5 mr-3"
                   />
                   <label htmlFor="check" className="">

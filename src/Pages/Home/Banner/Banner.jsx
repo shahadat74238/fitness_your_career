@@ -3,7 +3,7 @@ const Banner = () => {
 
 
   return (
-    <div className="h-screen w-full bg-[url('../assets/banner1.jpg')]">
+    <div className="h-screen w-full bg-[url('../assets/banner1.jpg')] bg-no-repeat bg-cover">
       <div className="max-w-7xl h-full mx-auto text-white flex items-center justify-center">
         <div className="w-3/4 ">
           <h3 className="text-3xl text-center font-semibold">Be an inspiration</h3>
