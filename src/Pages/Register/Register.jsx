@@ -39,7 +39,7 @@ const Register = () => {
     }
 
     // Create User
-    createUser(email, password, name)
+    createUser(email, password)
     .then(() => {
       profileUpdate(name, photoUrl)
       toast.success('Successfully Account Created!');
