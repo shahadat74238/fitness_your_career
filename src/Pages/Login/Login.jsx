@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { BsEyeSlash, BsGithub } from "react-icons/bs";
 import { useContext, useState } from "react";
@@ -11,7 +11,9 @@ const Login = () => {
     useContext(AuthContext);
   const navigate = useNavigate();
   const [error, serError] = useState("");
+  const location = useLocation();
   const [type, setType] = useState(false);
+  
 
   const handleLogin = (event) => {
     event.preventDefault();

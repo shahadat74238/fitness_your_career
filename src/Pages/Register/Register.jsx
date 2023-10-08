@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { BsEyeSlash, BsGithub } from "react-icons/bs";
 import { useContext, useState } from "react";
@@ -11,6 +11,7 @@ const Register = () => {
     const { googleLogin, githubLogin, createUser } = useContext(AuthContext);
     const [type, setType] = useState(false);
     const navigate = useNavigate();
+    const location = useLocation();
     const [error, setError] = useState("");
 
   const handleRegister = (event) => {

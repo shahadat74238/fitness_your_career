@@ -2,18 +2,36 @@ import { Link, useLoaderData } from "react-router-dom";
 import { BiDotsHorizontal } from "react-icons/bi";
 import { BiSolidUser } from 'react-icons/bi';
 import { AiTwotoneCalendar } from 'react-icons/ai';
+import AOS from "aos";
+import 'aos/dist/aos.css';
 import RightSideNav from "../EventDetails/RightSideNav/RightSideNav";
+import { useEffect } from "react";
+
 
 const Blog = () => {
   const blogs = useLoaderData();
 
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  }, []);
+
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full -mt-16 min-h-screen">
+      <div
+        style={{
+          backgroundImage: "url('../assets/bg.png')",
+        }}
+        className="h-[40vh] bg-cover bg-no-repeat bg-center"
+      >
+        <h1 className="text-3xl pt-[20vh] text-white font-bold text-center uppercase">
+          Blogs
+        </h1>
+      </div>
       <div className="max-w-7xl my-5 px-5 md:px-10 md:my-10 mx-auto gap-6 grid grid-cols-1 lg:grid-cols-6">
         <div className="lg:col-span-4  ">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {blogs.data.map((blog) => (
-              <div key={blog.id}>
+              <div data-aos="fade-up" key={blog.id}>
                 <div className=" hover:shadow-md shadow bg-[#f5f5f5] relative">
                   <div className="">
                     <img

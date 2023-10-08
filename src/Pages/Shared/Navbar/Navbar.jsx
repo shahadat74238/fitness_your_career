@@ -71,7 +71,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="w-full bg-[#0a0d1d] text-white">
+    <div className="w-full shadow-md  text-white">
       <div className="navbar max-w-7xl mx-auto px-5">
         <div className="navbar-start">
           <div className="dropdown">
@@ -98,7 +98,7 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <h1 className="md:text-5xl text-2xl font-bold">
+          <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold">
             <span className="text-[#7cb908]">FIT</span>NESS
           </h1>
         </div>

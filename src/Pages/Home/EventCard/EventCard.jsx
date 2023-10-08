@@ -1,17 +1,26 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import { BiDotsHorizontal } from "react-icons/bi";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 
 const EventCard = ({ events }) => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
-    <div className="my-20">
+    <div className="lg:my-20">
       <div>
         <h1 className="text-3xl  text-[#0a0d1d] font-bold text-center my-12 uppercase">
           Our Events
         </h1>
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 md:grid-cols-2 max-w-7xl mx-auto px-10">
           {events.slice(0, 6).map((event) => (
-            <div key={event.id}>
+            <div data-aos="zoom-in" key={event.id}>
               <div className="rounded-lg hover:shadow-md bg-[#f5f5f5] relative">
                 <div className="">
                   <img
