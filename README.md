@@ -14,7 +14,7 @@ Achieving your fitness goals begins at the gym, where sweat and determination co
 - Once you log in or create an account, you will see a success message.
 - If you want to log in manually and enter the wrong email or password, you will see an error message displayed.
 
-You can visit this website. The website link here.
+You can visit this website. The website link is here.
 
 
 ## [FITNESS Live Link](https://fitness-your-career.web.app/)
