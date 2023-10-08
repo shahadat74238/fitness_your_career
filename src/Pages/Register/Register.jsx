@@ -8,16 +8,19 @@ import toast from "react-hot-toast";
 
 
 const Register = () => {
-    const { googleLogin, githubLogin, createUser } = useContext(AuthContext);
+
+    const { googleLogin, githubLogin, createUser, profileUpdate } = useContext(AuthContext);
     const [type, setType] = useState(false);
     const navigate = useNavigate();
     const location = useLocation();
     const [error, setError] = useState("");
+    
 
   const handleRegister = (event) => {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
     const name = form.get("name");
+    const photoUrl = form.get("photo");
     const email = form.get('email');
     const password = form.get('password');
     const accepted = form.get('check');
@@ -35,8 +38,10 @@ const Register = () => {
       return;
     }
 
+    // Create User
     createUser(email, password, name)
     .then(() => {
+      profileUpdate(name, photoUrl)
       toast.success('Successfully Account Created!');
       // Navigate
       navigate(location?.state ? location.state : "/");
@@ -44,7 +49,8 @@ const Register = () => {
     .catch(error => {
         console.log(error.message);
     })
-  };
+
+      };
 
   // Google login.
   const handleGoogleLogin = () => {
@@ -73,7 +79,17 @@ const Register = () => {
   };
 
   return (
-    <div className=" min-h-screen">
+    <div className=" -mt-16 min-h-screen">
+      <div
+        style={{
+          backgroundImage: "url('../assets/bg.png')",
+        }}
+        className="h-[40vh] bg-cover bg-no-repeat bg-center"
+      >
+        <h1 className="text-3xl pt-[20vh] text-white font-bold text-center uppercase">
+          Create an Account
+        </h1>
+      </div>
       <div className="max-w-7xl  mx-auto py-10 items-center justify-between grid grid-cols-1 lg:grid-cols-2">
         <div className="md:w-3/4 mx-auto px-5 md:px-10 lg:px-0  md:pb-8 rounded-lg">
           <div className="md:px-14 px-8 py-6 rounded-md border border-[#7cb908]">

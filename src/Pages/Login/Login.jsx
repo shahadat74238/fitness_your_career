@@ -59,7 +59,17 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen -mt-16">
+      <div
+        style={{
+          backgroundImage: "url('../assets/bg.png')",
+        }}
+        className="h-[40vh] bg-cover bg-no-repeat bg-center"
+      >
+        <h1 className="text-3xl pt-[20vh] text-white font-bold text-center uppercase">
+          Login
+        </h1>
+      </div>
       <div className="max-w-7xl  mx-auto py-10 justify-between grid grid-cols-1 lg:grid-cols-2">
         <div className="md:w-3/4 mx-auto px-5 md:px-10 lg:px-0  md:pb-8 rounded-lg">
           <div className="md:px-14 px-8 py-6 rounded-md border border-[#7cb908]">

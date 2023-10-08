@@ -72,7 +72,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full shadow-md  text-white">
-      <div className="navbar max-w-7xl mx-auto px-5">
+      <div className="navbar max-w-7xl mx-auto px-5 lg:px-10">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost pl-0 lg:hidden">

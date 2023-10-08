@@ -1,4 +1,16 @@
+import toast from "react-hot-toast";
+
 const RightSideNav = () => {
+
+  const handleRegister = (e) => {
+    e.preventDefault();
+    toast.success('Successfully Register!')
+  };
+
+  const handleDownload =() => {
+    toast.success('Successfully Downloaded!')
+  };
+
   return (
     <div>
       <div className="bg-[#f5f5f5] p-5 mb-10">
@@ -14,7 +26,7 @@ const RightSideNav = () => {
           dolorum nam? Illum rem sit quisquam.
         </p>
         <div className="mt-8">
-          <button className="h-10 w-36 bg-[#7cb908] text-white font-semibold rounded hover:bg-white hover:text-[#7cb908] hover:border hover:border-[#7cb908] text-sm">
+          <button onClick={handleDownload} className="h-10 w-36 bg-[#7cb908] text-white font-semibold rounded hover:bg-white hover:text-[#7cb908] hover:border hover:border-[#7cb908] text-sm">
             DOWNLOAD INFO
           </button>
         </div>
@@ -23,11 +35,12 @@ const RightSideNav = () => {
         <h1 className="text-[#7cb908] font-bold text-lg">
           REGISTER AND JOIN EVENT
         </h1>
-        <form>
+        <form onSubmit={handleRegister}>
           <div>
             <input
               className="w-full py-2 px-4 my-3"
               type="text"
+              required
               placeholder="Your Name"
             />
           </div>
@@ -35,6 +48,7 @@ const RightSideNav = () => {
             <input
               className="w-full py-2 px-4 my-3"
               type="text"
+              required
               placeholder="Enter Your Email"
             />
           </div>
@@ -42,6 +56,7 @@ const RightSideNav = () => {
             <input
               className="w-full py-2 px-4 my-3"
               type="text"
+              required
               placeholder="Your Phone Number"
             />
           </div>

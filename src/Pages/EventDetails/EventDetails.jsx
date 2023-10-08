@@ -13,7 +13,17 @@ const EventDetails = () => {
   }, [events, eventId]);
 
   return (
-    <div>
+    <div className="w-full -mt-16">
+      <div
+        style={{
+          backgroundImage: "url('../assets/bg.png')",
+        }}
+        className="h-[40vh] bg-cover bg-no-repeat bg-center"
+      >
+        <h1 className="text-3xl pt-[20vh] text-white font-bold text-center uppercase">
+        {event.title}
+        </h1>
+      </div>
       <div className="max-w-7xl mx-auto gap-10 px-10 my-20 rounded-lg grid md:grid-cols-6 grid-cols-1">
         <div className="md:col-span-4">
           <div>
@@ -37,17 +47,25 @@ const EventDetails = () => {
             <div>
               <h1 className="text-2xl font-semibold">EVENT CONTENT</h1>
               <div className="my-5">
-              <li className="font-semibold text-lg">Health screenings</li>
-              <li className="font-semibold text-lg">Healthy food vendors</li>
-              <li className="font-semibold text-lg">Family-friendly workouts</li>
-              <li className="font-semibold text-lg">Yoga for relaxation</li>
-              <li className="font-semibold text-lg">Nutrition workshops</li>
+                <li className="font-semibold text-lg">Health screenings</li>
+                <li className="font-semibold text-lg">Healthy food vendors</li>
+                <li className="font-semibold text-lg">
+                  Family-friendly workouts
+                </li>
+                <li className="font-semibold text-lg">Yoga for relaxation</li>
+                <li className="font-semibold text-lg">Nutrition workshops</li>
               </div>
             </div>
             <div className="md:ml-20">
               <h1 className="text-2xl font-bold mb-5">TRAINER</h1>
-              <img className="w-full h-56 object-cover" src={event.trainer_img} alt="Loading image" />
-              <h2 className="text-lg font-semibold mt-3">Name: {event.trainer}</h2>
+              <img
+                className="w-full h-56 object-cover"
+                src={event.trainer_img}
+                alt="Loading image"
+              />
+              <h2 className="text-lg font-semibold mt-3">
+                Name: {event.trainer}
+              </h2>
             </div>
           </div>
         </div>

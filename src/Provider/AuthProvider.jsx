@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { createContext, useEffect, useState } from "react";
-import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import auth from "../Firebase/Firebase.config";
 
 export const AuthContext = createContext();
@@ -28,6 +28,11 @@ const AuthProvider = ({children}) => {
     const createUser = (email, password) => {
         setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password, name);
+    };
+
+    // Update Profile
+    const profileUpdate = (name, photoUrl) => {
+        return updateProfile(auth.currentUser, { displayName: name, photoURL: photoUrl});
     };
 
     // Login with email and password.
@@ -60,6 +65,7 @@ const AuthProvider = ({children}) => {
         user,
         loading,
         createUser,
+        profileUpdate,
         loginWithEmailAndPassword,
         googleLogin,
         githubLogin,
