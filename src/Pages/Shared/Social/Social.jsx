@@ -14,7 +14,7 @@ const Social = () => {
       <div className=" space-y-2 mt-8">
         <li className="list-none">
           <Link target={"_blank"} to="https://www.facebook.com/Shahadat.74238">
-            <FaFacebookSquare className="text-[#7cb908] text-2xl" />
+            <FaFacebookSquare className="text-[#7cb908] hover:text-[#61861c] text-2xl" />
           </Link>
         </li >
         <li className="list-none">
@@ -22,7 +22,7 @@ const Social = () => {
             target={"_blank"}
             to="https://www.linkedin.com/in/md-shahadat-hosen-801164288/"
           >
-            <FaLinkedin className="text-[#7cb908] text-2xl" />
+            <FaLinkedin className="text-[#7cb908] hover:text-[#61861c] text-2xl" />
           </Link>
         </li >
         <li className="list-none">
@@ -30,12 +30,12 @@ const Social = () => {
             target={"_blank"}
             to="https://www.instagram.com/mdshahadathosen74238/"
           >
-            <FaInstagramSquare className="text-[#7cb908] text-2xl" />
+            <FaInstagramSquare className="text-[#7cb908] hover:text-[#61861c] text-2xl" />
           </Link>
         </li>
         <li className="list-none">
           <Link target={"_blank"} to="https://github.com/shahadat74238">
-            <FaGithubSquare className="text-[#7cb908] text-2xl" />
+            <FaGithubSquare className="text-[#7cb908] hover:text-[#61861c] text-2xl" />
           </Link>
         </li>
       </div>

@@ -122,7 +122,7 @@ const Login = () => {
                   Forgot Password
                 </p>
               </div>
-              <button className="w-full py-3 bg-[#7cb908]  font-semibold text-lg text-white mt-10">
+              <button className="w-full h-12 hover:bg-white hover:border hover:border-[#7cb908] hover:text-[#7cb908] bg-[#7cb908]  font-semibold text-lg text-white mt-10">
                 Login
               </button>
             </form>

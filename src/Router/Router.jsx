@@ -9,6 +9,7 @@ import EventDetails from "../Pages/EventDetails/EventDetails";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Blog from "../Pages/Blog/Blog";
+import Contact from "../Pages/Contact/Contact";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
           </PrivetRoute>
         ),
         loader: () => fetch("../blog.json"),
+      },
+      {
+        path: "/contact",
+        element: <Contact />
       },
       {
         path: "/aboutUs",

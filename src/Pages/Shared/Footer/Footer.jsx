@@ -42,6 +42,18 @@ const Footer = () => {
       </li>
       <li>
         <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#7cb908] underline font-semibold"
+              : "hover:text-[#7cb908] hover:underline"
+          }
+        >
+          Contact
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
           to="/aboutUs"
           className={({ isActive }) =>
             isActive
@@ -58,10 +70,10 @@ const Footer = () => {
   return (
     <footer className="footer footer-center p-10 text-white bg-[#0a0d1d] rounded">
       <div className="navbar-center">
-        <ul className="menu-horizontal px-1 gap-8 text-lg">{navLinks}</ul>
+        <ul className="flex md:flex-row flex-col px-1 md:gap-8 text-lg">{navLinks}</ul>
       </div>
       <nav>
-        <div className="grid grid-flow-col gap-4">
+        <div className="grid gap-4 grid-cols-4">
           <Link target={'_blank'} to="https://www.facebook.com/Shahadat.74238">
             <FaFacebookSquare className="text-[#7cb908] text-3xl" />
           </Link>
