@@ -23,7 +23,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/events",
-        element: <Events />,
+        element: (
+          <PrivetRoute>
+            <Events />
+          </PrivetRoute>
+        ),
         loader: () => fetch("../gym_data.json"),
       },
       {
