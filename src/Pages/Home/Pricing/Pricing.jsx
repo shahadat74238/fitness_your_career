@@ -11,7 +11,7 @@ const Pricing = () => {
     <div className="w-full mb-5 md:mb-20">
       <div className="max-w-7xl mx-auto px-5 md:px-10">
         <h1 className="text-[#7cb908] text-3xl font-bold text-center pt-5 lg:pt-20">
-          OUR TRAINERS
+        OUR PRICING
         </h1>
         <div className=" grid grid-cols-1 py-5 lg:py-20 gap-6 md:grid-cols-2 lg:grid-cols-4">
           <div

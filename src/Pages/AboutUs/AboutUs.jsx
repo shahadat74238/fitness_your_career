@@ -1,5 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import Pricing from "../Home/Pricing/Pricing";
+import Trainer from "../Home/Trainer/Trainer";
+
 
 const AboutUs = () => {
   return (
@@ -14,7 +17,6 @@ const AboutUs = () => {
           About Us
         </h1>
       </div>
-      
       <div className="max-w-7xl mx-auto px-5 md:px-10">
         <div className="flex items-center md:flex-row gap-5 flex-col-reverse">
           <div className="flex-1">
@@ -45,6 +47,8 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      <Trainer />
+      <Pricing />
     </div>
   );
 };
