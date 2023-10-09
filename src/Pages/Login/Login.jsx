@@ -98,7 +98,7 @@ const Login = () => {
                 />
                 <span
                   onClick={() => setType(!type)}
-                  className="absolute bottom-4 right-0"
+                  className="absolute cursor-pointer bottom-4 right-0"
                 >
                   {type ? <BsEye></BsEye> : <BsEyeSlash></BsEyeSlash>}
                 </span>

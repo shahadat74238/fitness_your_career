@@ -42,6 +42,9 @@ const Register = () => {
     createUser(email, password)
     .then(() => {
       profileUpdate(name, photoUrl)
+      .then(() => {
+        window.location.reload();
+      });
       toast.success('Successfully Account Created!');
       // Navigate
       navigate(location?.state ? location.state : "/");
@@ -133,7 +136,7 @@ const Register = () => {
                   placeholder="Password"
                   className={`${type? "text-base py-3" : ""} mt-4 outline-none placeholder:font-normal placeholder:text-base text-2xl font-bold border-b-2  border-[#C5C5C5] py-2 placeholder:text-[#C5C5C5] bg-transparent w-full`}
                 />
-                <span onClick={()=>setType(!type)} className="absolute bottom-4 right-0">
+                <span onClick={()=>setType(!type)} className="absolute bottom-4 cursor-pointer right-0">
                   {
                     type? <BsEye></BsEye>: <BsEyeSlash></BsEyeSlash>
                   }
