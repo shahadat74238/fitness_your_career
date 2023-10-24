@@ -27,10 +27,10 @@ const Events = () => {
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 md:grid-cols-2 max-w-7xl mx-auto px-10">
           {events.map((event) => (
             <div data-aos="fade-up" key={event.id}>
-              <div className="rounded-lg hover:shadow-md bg-[#f5f5f5] relative">
-                <div className="">
+              <div className="rounded-lg overflow-hidden hover:shadow-md bg-[#f5f5f5] relative">
+                <div className="h-60 overflow-hidden bg-black">
                   <img
-                    className="rounded-t-lg h-60 w-full object-cover"
+                    className="rounded-t-lg hover:opacity-70 hover:scale-110 scale-100 duration-500 h-60 w-full object-cover"
                     src={event.image}
                     alt="Loading image"
                   />

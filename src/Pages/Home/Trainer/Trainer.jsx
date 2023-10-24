@@ -16,21 +16,21 @@ const Trainer = () => {
         <div className="grid grid-cols-1 py-5 lg:py-20 gap-6 md:grid-cols-2 lg:grid-cols-4">
             {/* card 1 */}
           <div data-aos="flip-right" className="bg-[#7cb908]">
-            <div>
-              <img className="w-full h-80 object-cover"
+            <div className="h-80 overflow-hidden">
+              <img className="w-full scale-100 hover:scale-105 duration-500 h-80 object-cover"
                 src="https://template.unicoderbd.com/unifit/images/trainer/trainer2.jpg"
-                alt="Loadin Image"
+                alt="Loading Image"
               />
             </div>
-            <div className="text-center my-5 ">
+            <div className="text-center my-5">
                 <h1 className="text-2xl text-white font-bold">David Lee</h1>
                 <p className="font-semibold">Boxing Trainer </p>
             </div>
           </div>
           {/* card 2 */}
           <div data-aos="flip-right" className="bg-[#7cb908]">
-            <div>
-              <img className="w-full h-80 object-cover"
+            <div className="h-80 overflow-hidden">
+              <img className="w-full scale-100 hover:scale-105 duration-500 h-80 object-cover"
                 src="https://www.personaltrainercentral.com/images/fit_happy_fitness_trainer.jpg"
                 alt="Loading Image"
               />
@@ -42,8 +42,8 @@ const Trainer = () => {
           </div>
           {/* card 3 */}
           <div data-aos="flip-right" className="bg-[#7cb908]">
-            <div>
-              <img className="w-full h-80 object-cover"
+            <div className="h-80 overflow-hidden">
+              <img className="w-full scale-100 hover:scale-105 duration-500 h-80 object-cover"
                 src="https://media.licdn.com/dms/image/C5603AQFXz9d_vkAVDA/profile-displayphoto-shrink_800_800/0/1655045683046?e=2147483647&v=beta&t=6ZJUfSAYwVw0hu2lHei5QqphQbDtxudzo1nJI-aiKDs"
                 alt="Loading Image"
               />
@@ -55,8 +55,8 @@ const Trainer = () => {
           </div>
           {/* card 4 */}
           <div data-aos="flip-right" className="bg-[#7cb908]">
-            <div>
-              <img className="w-full h-80 object-cover"
+            <div className="h-80 overflow-hidden">
+              <img className="w-full scale-100 hover:scale-105 duration-500 h-80 object-cover"
                 src="https://img.freepik.com/premium-photo/handsome-trainer-smiling-camera_13339-296967.jpg?w=2000"
                 alt="Loading Image"
               />

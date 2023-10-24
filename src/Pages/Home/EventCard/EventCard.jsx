@@ -21,10 +21,10 @@ const EventCard = ({ events }) => {
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 md:grid-cols-2 max-w-7xl mx-auto px-10">
           {events.slice(0, 6).map((event) => (
             <div data-aos="zoom-in" key={event.id}>
-              <div className="rounded-lg hover:shadow-md bg-[#f5f5f5] relative">
-                <div className="">
+              <div className="rounded-lg overflow-hidden hover:shadow-md bg-[#f5f5f5] relative">
+                <div className="h-60 bg-black overflow-hidden">
                   <img
-                    className="rounded-t-lg h-60 w-full object-cover"
+                    className="rounded-t-lg h-60 w-full scale-100 duration-500 hover:opacity-70 hover:scale-110 object-cover"
                     src={event.image}
                     alt="Loading image"
                   />
@@ -81,7 +81,7 @@ const EventCard = ({ events }) => {
         </div>
         <div className="flex justify-center my-5 md:my-10">
           <Link to="/events">
-            <button className=" font-semibold text-lg rounded h-10 w-32 bg-[#7cb908] text-white hover:bg-white hover:border-[#7cb908] hover:text-[#7cb908] hover:border-2">
+            <button className=" font-semibold text-lg rounded h-10 w-32 bg-[#7cb908] text-white duration-500 hover:bg-white hover:border-[#7cb908] hover:text-[#7cb908] hover:border-2">
               SEE ALL
             </button>
           </Link>
